@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "dydb_module" {
-  source                                    = ""
+  source                                    = "git@github.com:karthik012/terraform_dynamodb.git"
   create_dynamodb_table                     = "true"
   name                                      = "swarm-dev-dyndbtable"
   read_capacity                             = 1
